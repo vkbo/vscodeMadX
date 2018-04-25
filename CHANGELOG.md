@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.3 [2018-04-24] - Minor Changes
+* Added the repository to GitHub as well in order to allow for issues tracking.
+* Added highlighting of mcro execs.
+
 ## 0.3.2 [2018-01-24] - Bug Fix
 * Bug: Moved controls higher up in the hierarchy as some keywords were overriding some controls if they have the same name.
 

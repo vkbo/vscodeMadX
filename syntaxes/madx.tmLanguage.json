@@ -162,6 +162,28 @@
     "controls": {
       "patterns": [
         {
+          "begin": "(?xi)\\b(?<!\\.)(exec)(\\s*[\\,\\s])([a-zA-Z]?[a-zA-Z0-9_]*)(\\s*\\()",
+          "beginCaptures": {
+            "1": {"name": "keyword.control.madx"},
+            "2": {"name": "punctuation.madx"},
+            "3": {"name": "entity.name.function.macro.input.madx"},
+            "4": {"name": "punctuation.madx"}
+          },
+          "end": "\\)\\s*;",
+          "endCaptures": {
+            "0": {"name": "punctuation.madx"}
+          },
+          "patterns": [
+            { "include": "#internals" },
+            { "include": "#functions" },
+            { "include": "#objects" },
+            { "include": "#math" },
+            { "include": "#particles" },
+            { "include": "#numbers" },
+            { "include": "#strings" }
+          ]
+        },
+        {
           "begin": "(?xi)\\b(?<!\\.)(aperture|assign|beam|call|coguess|constraint|copyfile|clear|create|cycle|delete|dumpsequ|emit|exec|extract|fill|fill_knob|global|gweight|help|install|jacobian|lmdif|makethin|match|migrad|move|option|plot|print|printf|readmytable|readtable|remove|removefile|renamefile|replace|resbeam|resplot|save|savebeta|select|set|setvars|setvars_const|setvars_knob|setvars_lin|seqedit|show|shrink|simplex|sixtrack|sxfread|sxfwrite|survey|system|title|twiss|use|use_macro|write|value|vary|weight)(\\s*[\\,\\s])",
           "beginCaptures": {
             "1": {"name": "keyword.control.madx"},

@@ -2,8 +2,17 @@
     "name": "madx",
     "displayName": "MadX",
     "description": "MadX Language",
+    "author": {
+        "name": "Veronica Berglyd Olsen",
+        "email": "v.k.b.olsen@cern.ch",
+        "url": "http://vkbo.net"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vkbo/vscodeMadX"
+    },
     "icon": "cern.png",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "publisher": "vkbo",
     "engines": {
         "vscode": "^1.18.0"
