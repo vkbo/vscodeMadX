@@ -1,0 +1,38 @@
+{
+    "name": "madx",
+    "displayName": "MadX",
+    "description": "MadX Language",
+    "icon": "cern.png",
+    "version": "0.3.2",
+    "publisher": "vkbo",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "madx",
+                "aliases": [
+                    "MadX",
+                    "madx"
+                ],
+                "extensions": [
+                    ".madx",
+                    ".seq",
+                    ".mask"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "madx",
+                "scopeName": "source.madx",
+                "path": "./syntaxes/madx.tmLanguage.json"
+            }
+        ]
+    }
+}
